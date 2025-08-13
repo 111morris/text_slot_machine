@@ -23,10 +23,22 @@ def get_slot_machine_spin(rows, cols, symbols):
    for col in range(cols): 
     column = []
     current_symbols = all_symboles[:]
+
     for row in range(rows):
      value = random.choice(current_symbols)
      current_symbols.remove(value)
      column.append(value)
+    columns.append(column)
+
+   return columns
+
+def print_slot_machine(columns):
+ for row in range(len(columns[0])):
+  for i, columns in enumerate(columns): 
+   if i != len(columns) -1: 
+    print(column[row], "|")
+   else: 
+    print(column[row])
       
     current_symbols = all_symbols[:]
     for row in range(rows):
