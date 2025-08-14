@@ -40,9 +40,6 @@ def print_slot_machine(columns):
    else: 
     print(column[row])
       
-    """ current_symbols = all_symbols[:]
-    for row in range(rows):
-     value = random.choice(all_symbols) """
 
 def deposit(): 
  while True: 
