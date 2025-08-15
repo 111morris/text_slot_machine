@@ -92,6 +92,6 @@ def main():
   bet = get_bet()
   total_bet = bet * lines
   print(f"You are betting Ksh.{bet} on {lines} lines. Total bet is equal to: {total_bet}")
-
-
+  slots = get_slot_machine_spin(ROWS, COLS, symbol_count)
+  print_slot_machine(slots) 
 main()
