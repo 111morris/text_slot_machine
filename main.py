@@ -78,6 +78,9 @@ def get_bet():
    print("Please enter a number")
    return amount
 
+def print_line():
+ print("__________")
+
 def main():
  balance = deposit()
  lines = get_number_of_lines()
@@ -93,4 +96,5 @@ def main():
   print(f"You are betting Ksh.{bet} on {lines} lines. Total bet is equal to: {total_bet}")
   slots = get_slot_machine_spin(ROWS, COLS, symbol_count)
   print_slot_machine(slots) 
+
 main()
