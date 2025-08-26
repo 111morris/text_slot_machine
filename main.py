@@ -78,9 +78,6 @@ def get_bet():
    print("Please enter a number")
    return amount
 
-def print_line():
- print("__________")
-
 def main():
  balance = deposit()
  lines = get_number_of_lines()
