@@ -77,8 +77,6 @@ def get_bet():
   else:
    print("Please enter a number")
    return amount
-def print_line():
- print("__________")
 
 
 def main():
